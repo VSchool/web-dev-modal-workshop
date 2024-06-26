@@ -10,14 +10,14 @@ function Post(props) {
             <div className="post">
                 <h2>{title}</h2>
                 <h4>{description}</h4>
-                <button onClick={handleToggle}>Edit</button>
+                <button>Edit</button>
             </div>
-                <ModalForm
-                    title={title}
-                    description={description}
-                    handleEdit={handleEdit}
-                    id={id}
-                />
+            <ModalForm
+                title={title}
+                description={description}
+                handleEdit={handleEdit}
+                id={id}
+            />
         </>
     );
 }

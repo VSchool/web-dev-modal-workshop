@@ -31,16 +31,16 @@ function PostList() {
         }
     ])
 
-    
-    const handleEdit = (id, update) => setPosts(prevPosts => prevPosts.map(post => post.id === id ? update : post))
-    
-    const postElements = posts.map(post => <Post key={post.id} {...post} handleEdit={handleEdit}/>)
 
-    return ( 
+    const handleEdit = (id, update) => setPosts(prevPosts => prevPosts.map(post => post.id === id ? update : post))
+
+    const postElements = posts.map(post => <Post key={post.id} {...post} handleEdit={handleEdit} />)
+
+    return (
         <div className="post--list">
             {postElements}
         </div>
-     );
+    );
 }
 
 export default PostList;
