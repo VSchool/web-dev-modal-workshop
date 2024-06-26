@@ -1,5 +1,4 @@
 import ModalForm from "./ModalForm";
-import { useState } from "react";
 
 function Post(props) {
 
